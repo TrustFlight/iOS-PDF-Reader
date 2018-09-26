@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iqd-FA-oQ4">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iqd-FA-oQ4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xgz-br-S4l">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="UBd-Nd-OUA">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -32,8 +36,10 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spp-zz-ZXW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-Eg-xUH">
+                                        <rect key="frame" x="-12.5" y="0.0" width="400" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="AiN-T1-0xx"/>
                                         </constraints>
@@ -55,8 +61,8 @@
                         <constraints>
                             <constraint firstItem="spp-zz-ZXW" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="5s1-FI-xLW"/>
                             <constraint firstItem="bKE-eF-3Dz" firstAttribute="top" secondItem="spp-zz-ZXW" secondAttribute="bottom" id="8cX-bN-oYQ"/>
+                            <constraint firstItem="xgz-br-S4l" firstAttribute="top" secondItem="5MZ-3M-tJA" secondAttribute="bottom" id="9Py-EC-gcB"/>
                             <constraint firstAttribute="trailing" secondItem="xgz-br-S4l" secondAttribute="trailing" id="Epe-MY-55K"/>
-                            <constraint firstItem="xgz-br-S4l" firstAttribute="top" secondItem="NlH-gX-4Vd" secondAttribute="top" id="HXq-iD-jkO"/>
                             <constraint firstItem="bKE-eF-3Dz" firstAttribute="top" secondItem="xgz-br-S4l" secondAttribute="bottom" id="f40-Qg-Nwq"/>
                             <constraint firstItem="xgz-br-S4l" firstAttribute="leading" secondItem="NlH-gX-4Vd" secondAttribute="leading" id="hkr-hU-aHw"/>
                             <constraint firstAttribute="trailing" secondItem="spp-zz-ZXW" secondAttribute="trailing" id="kwc-Rl-No8"/>
@@ -97,7 +103,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqO-mN-48T"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqO-mN-48T">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <constraints>
